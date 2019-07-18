@@ -1,0 +1,30 @@
+API DESIGN 
+..............
+
+ENDPOINT
+========
+http://localhost:8081/check-bill
+
+
+Request:
+
+{  
+   "BillCheckId":1,
+   "ControlNumber":"99786171718716",
+   "SpCode":"SP481",
+
+}
+
+
+Response:
+
+{  
+   "BillControlNumber":"99482121212212",
+   "SpCode":"SP451",
+   "SpShortName":"UWASA",
+   "PSPCode":"PSP123",
+   "PspShortName":"EXIM",
+   "PaidDate":"12-12-2019",
+   "PaymentReceipt":"122323",
+   "BillCurrency":"TZS"
+}
