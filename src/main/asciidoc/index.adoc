@@ -1,0 +1,34 @@
+= External Billing Service API Documentation
+:toc:
+:toclevels: 2
+
+== Introduction
+This documentation shows how to use Search Bills Service API
+
+
+== Search Bill
+This section show how to search Bills
+
+.curl
+include::{snippets}/bill-search/curl-request.adoc[]
+
+.request
+include::{snippets}/bill-search/http-request.adoc[]
+
+.fields
+include::{snippets}/bill-search/request-fields.adoc[]
+
+.response
+include::{snippets}/bill-search/http-response.adoc[]
+
+.fields
+include::{snippets}/bill-search/response-fields.adoc[]
+
+.body
+include::{snippets}/bill-search/response-body.adoc[]
+
+
+
+
+
+As you can see the format is very simple, and in fact you always get the same message.

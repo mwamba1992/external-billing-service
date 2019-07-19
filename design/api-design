@@ -3,15 +3,19 @@ API DESIGN
 
 ENDPOINT
 ========
-http://localhost:8081/check-bill
+http://localhost:8081/exbill/search
+
+
+method-type POST
+content-type Content-Json
 
 
 Request:
 
 {  
-   "BillCheckId":1,
-   "ControlNumber":"99786171718716",
-   "SpCode":"SP481",
+   "billCheckId":1,
+   "controlNumber":"99786171718716",
+   "spCode":"SP481",
 
 }
 
@@ -19,16 +23,27 @@ Request:
 Response:
 
 {  
-   "BillControlNumber":"99482121212212",
-   "SpCode":"SP451",
-   "SpShortName":"UWASA",
-   "PSPCode":"PSP123",
-   "PspShortName":"EXIM",
-   "PaidDate":"12-12-2019",
-   "PaymentReceipt":"122323",
-   "BillCurrency":"TZS"
+   "billControlNumber":"99482121212212",
+   "spCode":"SP451",
+   "spShortName":"UWASA",
+   "pSPCode":"PSP123",
+   "pspShortName":"EXIM",
+   "paidDate":"12-12-2019",
+   "paymentReceipt":"122323",
+   "billCurrency":"TZS",
+   "stsCode":"666"
 }
 
+on Above
+============
+
+if stsCode = 666 Bill Available
+   stsCode = 777 Bill Not Availabe
+   stsCode = 999 invalid req data
+   
+   
+   
+   
 
 
 
